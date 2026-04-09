@@ -48,7 +48,7 @@ console.log('Token:', process.env.TWILIO_AUTH_TOKEN);
   }
 
   // Optional: OTP verification
-  @Post('otp/verify')
+  @Post('otp/verify/tester')
   async verifyOtp(@Body() body: { phone: string; otp: string }) {
     // For trial, in-memory or DB checkS
     // Implement verification logic in UserService
