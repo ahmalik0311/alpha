@@ -26,7 +26,7 @@ export class UserController {
   handleUser(@Req() req, @Res() res) {
     const userId = req.params.id;
     
-    console.log('Request from Twilio:', req.body);
+    console.log('hELLO World Request from Twilio:', req.body);
 
     res.type('text/xml'); // Twilio requires XML
     res.send(`
